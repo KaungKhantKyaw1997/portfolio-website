@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaung Khant Kyaw</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Mulish", sans-serif;
+        background-color: #0e1015;
+        color: #ffffff;
+        margin: 0;
+        padding: 2rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        display: flex;
+        width: 100%;
+        animation: fadeIn 1.5s ease-out;
+      }
+
+      header h1 {
+        opacity: 0;
+        font-size: 32px;
+        animation: fadeIn 1.5s ease-out forwards;
+      }
+
+      header h1:last-child {
+        color: #f4b93f;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .card {
+        display: flex;
+        justify-content: space-between;
+        background-color: #1a1c20;
+        color: #ffffff;
+        margin-top: 2rem;
+        border-radius: 16px;
+        width: 100%;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .card-item {
+        text-align: center;
+      }
+
+      .card-item h1 {
+        margin: 0;
+        font-size: 32px;
+        color: #f4b93f;
+      }
+
+      .card-item div {
+        margin: 0;
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 3rem;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header" style="padding-top: 1rem">
+      <h1>Hey, I'm</h1>
+      &nbsp;
+      <h1>Kaung Khant Kyaw</h1>
+    </header>
+
+    <div id="typedtext" style="width: 100%"></div>
+
+    <div class="card">
+      <div class="card-item" style="padding: 1.5rem 0.5rem 1.5rem 10rem">
+        <h1>5+</h1>
+        <div>Projects Development</div>
+        <div>from scratch</div>
+      </div>
+      <div class="card-item" style="padding: 1.5rem 0.5rem 1.5rem 0">
+        <h1>4+</h1>
+        <div>Years of</div>
+        <div>Experience</div>
+      </div>
+      <div class="card-item" style="padding: 1.5rem 0.5rem 1.5rem 0">
+        <h1>1</h1>
+        <div>Web Development</div>
+        <div>Framework</div>
+      </div>
+      <div class="card-item" style="padding: 1.5rem 10rem 1.5rem 0">
+        <h1>2</h1>
+        <div>Mobile Development</div>
+        <div>Frameworks</div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img src="images/watchvault.svg" style="width: 30rem" />
+      <div style="flex: 1; margin-left: 2rem">
+        <h1 style="margin-top: 0">Watch Vault By Diggie</h1>
+        <p>
+          As a freelance mobile app developer, I successfully contributed to the
+          development of an E-Commerce Watch App, delivering a seamless and
+          user-friendly experience.
+        </p>
+        <div style="text-align: center; padding: 8rem 0">
+          <a
+            href="https://github.com/KaungKhantKyaw1997/e_commerce/tree/master"
+            target="_blank"
+            style="padding-right: 3rem; color: #0e1015"
+          >
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_687_10)">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2073 22.581 20.2775 21.05 21.744 19.0076C23.2106 16.9653 23.9996 14.5144 24 12C24 5.37 18.63 0 12 0Z"
+                  fill="#fff"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_687_10">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.watchvault.app001"
+            target="_blank"
+            style="padding-right: 3rem; color: #0e1015"
+          >
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.25 2.7886V21.2105C2.25012 21.2504 2.26204 21.2895 2.28427 21.3227C2.30649 21.3559 2.33803 21.3818 2.37492 21.3972C2.41182 21.4126 2.45243 21.4167 2.49166 21.4091C2.5309 21.4015 2.56701 21.3824 2.59547 21.3544L12.1875 12L2.59547 2.64469C2.56701 2.61663 2.5309 2.5976 2.49166 2.58998C2.45243 2.58236 2.41182 2.58649 2.37492 2.60186C2.33803 2.61723 2.30649 2.64315 2.28427 2.67637C2.26204 2.70959 2.25012 2.74863 2.25 2.7886ZM16.2094 8.15625L4.18219 1.53L4.17469 1.52578C3.9675 1.41328 3.77062 1.6936 3.94031 1.85672L13.3683 10.8717L16.2094 8.15625ZM3.94125 22.1433C3.77062 22.3064 3.9675 22.5867 4.17562 22.4742L4.18312 22.47L16.2094 15.8438L13.3683 13.1273L3.94125 22.1433ZM21.0647 10.8281L17.7061 8.97844L14.5481 12L17.7061 15.0202L21.0647 13.1719C21.9783 12.667 21.9783 11.333 21.0647 10.8281Z"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://apps.apple.com/us/app/watch-vault-by-diggie/id6469529196"
+            target="_blank"
+            style="color: #0e1015"
+          >
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_686_8)">
+                <path
+                  d="M8.80902 14.92L14.919 3.883C15.003 3.731 15.087 3.581 15.163 3.424C15.232 3.282 15.29 3.139 15.328 2.984C15.408 2.658 15.386 2.318 15.262 2.007C15.1409 1.70102 14.9232 1.44295 14.642 1.272C14.3657 1.10448 14.0404 1.03639 13.72 1.079C13.4 1.122 13.107 1.273 12.876 1.509C12.766 1.619 12.676 1.744 12.593 1.877C12.501 2.023 12.418 2.175 12.334 2.327L11.948 3.024L11.561 2.326C11.477 2.175 11.394 2.023 11.302 1.877C11.2212 1.74421 11.1263 1.6205 11.019 1.508C10.7937 1.27453 10.4965 1.12346 10.175 1.079C9.855 1.03663 9.5301 1.10471 9.25402 1.272C8.97288 1.44301 8.7552 1.70106 8.63402 2.007C8.50952 2.31755 8.48642 2.65953 8.56802 2.984C8.60602 3.139 8.66402 3.282 8.73202 3.424C8.80802 3.581 8.89202 3.731 8.97602 3.883L10.224 6.137L5.36202 14.919H2.03002C1.86202 14.919 1.69402 14.919 1.52702 14.929C1.37502 14.938 1.22702 14.957 1.07902 15C0.769021 15.09 0.497021 15.28 0.301021 15.548C0.10522 15.8178 -0.000308456 16.1425 -0.000488052 16.4758C-0.000667648 16.8092 0.104511 17.134 0.300021 17.404C0.497021 17.672 0.768021 17.861 1.07902 17.952C1.22702 17.995 1.37502 18.014 1.52702 18.023C1.69402 18.033 1.86202 18.033 2.03002 18.033H15.127C15.167 17.9456 15.2005 17.8554 15.227 17.763C15.642 16.347 14.611 14.919 13.192 14.919L8.80902 14.92ZM3.11302 18.542L2.32102 20.042C2.23902 20.198 2.15602 20.352 2.08202 20.513C2.01348 20.6578 1.95987 20.8093 1.92202 20.965C1.84178 21.2981 1.86409 21.6478 1.98602 21.968C2.10702 22.286 2.32002 22.551 2.59302 22.723C2.86502 22.895 3.18202 22.965 3.49402 22.92C3.80802 22.876 4.09402 22.722 4.32002 22.48C4.42802 22.365 4.51602 22.238 4.59802 22.102C4.68802 21.952 4.76902 21.796 4.85102 21.64L6.00002 19.464C5.91002 19.314 5.05302 17.994 3.11302 18.542ZM23.699 15.536C23.5061 15.2749 23.2322 15.0851 22.92 14.996C22.7738 14.9557 22.6235 14.9319 22.472 14.925C22.304 14.915 22.137 14.915 21.969 14.915H18.648L14.258 7.1C13.682 7.70471 13.3063 8.47218 13.182 9.298C13.0213 10.331 13.2136 11.3879 13.728 12.298L19.002 21.691C19.086 21.841 19.169 21.991 19.261 22.135C19.345 22.265 19.435 22.388 19.544 22.499C19.775 22.731 20.068 22.879 20.389 22.922C20.709 22.964 21.032 22.898 21.311 22.732C21.5916 22.5642 21.8097 22.3092 21.932 22.006C22.057 21.699 22.078 21.364 21.998 21.042C21.9587 20.8919 21.9034 20.7464 21.833 20.608C21.758 20.453 21.673 20.305 21.589 20.155L20.373 17.989H21.969C22.137 17.989 22.304 17.989 22.472 17.98C22.624 17.971 22.772 17.952 22.92 17.91C23.2327 17.8209 23.507 17.6306 23.7 17.369C23.8955 17.1037 24.0007 16.7826 24 16.453C24.0007 16.1234 23.8955 15.8023 23.7 15.537L23.699 15.536Z"
+                  fill="#fff"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_686_8">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var aText = new Array(
+        "A passionate software developer dedicated to transforming innovative ideas into reality.",
+        "With a keen eye for detail and a love for problem-solving,",
+        "I thrive in the dynamic world of software development, turning concepts into functional and efficient solutions."
+      );
+      var iSpeed = 100;
+      var iIndex = 0;
+      var iArrLength = aText[0].length;
+      var iScrollAt = 20;
+
+      var iTextPos = 0;
+      var sContents = "";
+      var iRow;
+
+      document
+        .getElementById("header")
+        .addEventListener("animationend", function () {
+          typewriter();
+        });
+
+      function revealCards() {
+        document.querySelector(".card").style.opacity = 1;
+      }
+
+      function revealImages() {
+        document.querySelector(".image-container").style.opacity = 1;
+      }
+
+      function typewriter() {
+        sContents = " ";
+        iRow = Math.max(0, iIndex - iScrollAt);
+        var destination = document.getElementById("typedtext");
+
+        while (iRow < iIndex) {
+          sContents += aText[iRow++] + "<br />";
+        }
+
+        if (iTextPos === iArrLength) {
+          destination.innerHTML = sContents + aText[iIndex] + "&nbsp;";
+        } else {
+          destination.innerHTML =
+            sContents + aText[iIndex].substring(0, iTextPos) + '<span style="color: #f4b93f;">|</span>';
+        }
+
+        if (iTextPos++ == iArrLength) {
+          iTextPos = 0;
+          iIndex++;
+          if (iIndex != aText.length) {
+            iArrLength = aText[iIndex].length;
+            setTimeout(typewriter, 500);
+          } else {
+            setTimeout(() => {
+              revealCards();
+              setTimeout(revealImages, 900);
+            }, 100);
+          }
+        } else {
+          setTimeout(typewriter, iSpeed);
+        }
+      }
+    </script>
+  </body>
+</html>
