@@ -9,31 +9,25 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap"
     />
     <style>
+      :root {
+        --main-primary: #f4b93f;
+      }
+
       body {
         font-family: "Mulish", sans-serif;
         background-color: #0e1015;
         color: #ffffff;
-        margin: 0;
-        padding: 2rem 10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 3rem;
       }
 
-      header {
-        display: flex;
-        width: 100%;
+      .intro-header {
         animation: fadeIn 1.5s ease-out;
       }
 
-      header h1 {
+      .intro {
         opacity: 0;
         font-size: 32px;
         animation: fadeIn 1.5s ease-out forwards;
-      }
-
-      header h1:last-child {
-        color: #f4b93f;
       }
 
       @keyframes fadeIn {
@@ -47,13 +41,11 @@
 
       .card {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
         background-color: #1a1c20;
-        color: #ffffff;
         margin-top: 2rem;
         border-radius: 16px;
-        width: 100%;
-        text-align: left;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         opacity: 0;
         transition: opacity 1s ease-in-out;
@@ -61,12 +53,15 @@
 
       .card-item {
         text-align: center;
+        margin: 1rem 0;
+        flex: 1;
+        min-width: 200px;
       }
 
       .card-item h1 {
         margin: 0;
         font-size: 32px;
-        color: #f4b93f;
+        color: var(--main-primary);
       }
 
       .card-item div {
@@ -75,42 +70,109 @@
         color: #fff;
       }
 
+      @media screen and (max-width: 768px) {
+        .card-item {
+          flex-basis: 100%;
+        }
+      }
+
       .image-container {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
         padding-top: 3rem;
         opacity: 0;
         transition: opacity 1s ease-in-out;
       }
+
+      .image-container img {
+        width: 30rem;
+      }
+
+      .image-details {
+        flex: 1;
+        margin-left: 2rem;
+      }
+
+      .image-details h1 {
+        margin-top: 0;
+      }
+
+      .image-details p {
+        margin: 0;
+      }
+
+      .image-details div {
+        text-align: center;
+        padding: 8rem 0;
+      }
+
+      .image-details a {
+        padding: 0 2rem;
+        color: #0e1015;
+      }
+
+      .image-details svg {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        .image-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .image-container img {
+          width: 18rem;
+        }
+
+        .image-details {
+          margin-left: 0;
+          margin-top: 2rem;
+        }
+
+        .image-details div {
+          padding: 2rem 0;
+        }
+
+        .image-details a {
+          padding: 0 1rem;
+          color: #0e1015;
+        }
+        
+        .image-details svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
     </style>
   </head>
   <body>
-    <header id="header" style="padding-top: 1rem">
-      <h1>Hey, I'm</h1>
-      &nbsp;
-      <h1>Kaung Khant Kyaw</h1>
+    <header id="introheader" class="intro-header">
+      <h1 class="intro">
+        Hey, I'm
+        <span style="color: var(--main-primary)">Kaung Khant Kyaw</span>
+      </h1>
     </header>
 
-    <div id="typedtext" style="width: 100%"></div>
+    <div id="introtypedtext" style="width: 100%"></div>
 
     <div class="card">
-      <div class="card-item" style="padding: 1.5rem 0.5rem 1.5rem 10rem">
+      <div class="card-item">
         <h1>5+</h1>
         <div>Projects Development</div>
         <div>from scratch</div>
       </div>
-      <div class="card-item" style="padding: 1.5rem 0.5rem 1.5rem 0">
+      <div class="card-item">
         <h1>4+</h1>
         <div>Years of</div>
         <div>Experience</div>
       </div>
-      <div class="card-item" style="padding: 1.5rem 0.5rem 1.5rem 0">
+      <div class="card-item">
         <h1>1</h1>
         <div>Web Development</div>
         <div>Framework</div>
       </div>
-      <div class="card-item" style="padding: 1.5rem 10rem 1.5rem 0">
+      <div class="card-item">
         <h1>2</h1>
         <div>Mobile Development</div>
         <div>Frameworks</div>
@@ -118,23 +180,22 @@
     </div>
 
     <div class="image-container">
-      <img src="images/watchvault.svg" style="width: 30rem" />
-      <div style="flex: 1; margin-left: 2rem">
-        <h1 style="margin-top: 0">Watch Vault By Diggie</h1>
+      <img src="images/watchvault.svg" />
+      <div class="image-details">
+        <h1>Watch Vault By Diggie</h1>
         <p>
           As a freelance mobile app developer, I successfully contributed to the
           development of an E-Commerce Watch App, delivering a seamless and
           user-friendly experience.
         </p>
-        <div style="text-align: center; padding: 8rem 0">
+        <div>
           <a
             href="https://github.com/KaungKhantKyaw1997/e_commerce/tree/master"
             target="_blank"
-            style="padding-right: 3rem; color: #0e1015"
           >
             <svg
-              width="64"
-              height="64"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -155,11 +216,10 @@
           <a
             href="https://play.google.com/store/apps/details?id=com.watchvault.app001"
             target="_blank"
-            style="padding-right: 3rem; color: #0e1015"
           >
             <svg
-              width="64"
-              height="64"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -173,11 +233,10 @@
           <a
             href="https://apps.apple.com/us/app/watch-vault-by-diggie/id6469529196"
             target="_blank"
-            style="color: #0e1015"
           >
             <svg
-              width="64"
-              height="64"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -215,9 +274,9 @@
       var iRow;
 
       document
-        .getElementById("header")
+        .getElementById("introheader")
         .addEventListener("animationend", function () {
-          typewriter();
+          introtypewriter();
         });
 
       function revealCards() {
@@ -228,10 +287,10 @@
         document.querySelector(".image-container").style.opacity = 1;
       }
 
-      function typewriter() {
+      function introtypewriter() {
         sContents = " ";
         iRow = Math.max(0, iIndex - iScrollAt);
-        var destination = document.getElementById("typedtext");
+        var destination = document.getElementById("introtypedtext");
 
         while (iRow < iIndex) {
           sContents += aText[iRow++] + "<br />";
@@ -241,7 +300,9 @@
           destination.innerHTML = sContents + aText[iIndex] + "&nbsp;";
         } else {
           destination.innerHTML =
-            sContents + aText[iIndex].substring(0, iTextPos) + '<span style="color: #f4b93f;">|</span>';
+            sContents +
+            aText[iIndex].substring(0, iTextPos) +
+            '<span style="color: var(--main-primary);">|</span>';
         }
 
         if (iTextPos++ == iArrLength) {
@@ -249,7 +310,7 @@
           iIndex++;
           if (iIndex != aText.length) {
             iArrLength = aText[iIndex].length;
-            setTimeout(typewriter, 500);
+            setTimeout(introtypewriter, 500);
           } else {
             setTimeout(() => {
               revealCards();
@@ -257,7 +318,7 @@
             }, 100);
           }
         } else {
-          setTimeout(typewriter, iSpeed);
+          setTimeout(introtypewriter, iSpeed);
         }
       }
     </script>
