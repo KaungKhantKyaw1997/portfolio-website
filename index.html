@@ -138,10 +138,35 @@
           padding: 0 1rem;
           color: #0e1015;
         }
-        
+
         .image-details svg {
           width: 2rem;
           height: 2rem;
+        }
+      }
+
+      footer {
+        background-color: #1a1c20;
+        border-radius: 16px;
+        margin-top: 6rem;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+
+      .contact-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-info-container > div {
+        margin-top: 0.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .contact-info-container {
+          flex-direction: row;
+          justify-content: space-between;
         }
       }
     </style>
@@ -257,6 +282,38 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <h3 style="margin: 0; margin-bottom: 1rem">Contact Us</h3>
+      <div class="contact-info-container">
+        <div style="display: flex">
+          <img src="images/phone.svg" />&nbsp;
+          <div style="text-align: left; align-self: center">
+            <a href="tel:+959782227894" style="color: #ffffff96;">+959 78 222 78 94</a>
+          </div>
+        </div>
+        <div style="display: flex">
+          <img src="images/mail.svg" />&nbsp;
+          <div style="text-align: left; align-self: center">
+            <a href="mailto:kaungkhant19297@gmail.com" style="color: #ffffff96;">kaungkhant19297@gmail.com</a>
+          </div>
+        </div>
+        <div style="display: flex">
+          <img src="images/linkedin.svg" />&nbsp;
+          <div style="text-align: left; align-self: center">
+            <a href="https://www.linkedin.com/in/kaung-khant-kyaw-3101a8252" target="_blank" rel="noopener noreferrer" style="color: #ffffff96;">LinkedIn Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info-container">
+        <div style="display: flex">
+          <img src="images/map.svg" />&nbsp;
+          <div style="text-align: left; align-self: center">
+            <span style="color: #ffffff96;">No.(84), Shwe Hin Thar (4)Street, Hlaing Township, Yangon.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
       var aText = new Array(
